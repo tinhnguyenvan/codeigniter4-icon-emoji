@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="57d5074c-b426-4274-a3b1-c6bb84d5f9c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
@@ -137,6 +146,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="156" y="39" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1598326473129" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1598341869596">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1598341869596" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1598331119780">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
