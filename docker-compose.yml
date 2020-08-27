@@ -1,0 +1,18 @@
+version: '3.5'
+services:
+  tools:
+    container_name: tools
+    image: 'tinhnguyenvan/php:7.2'
+    volumes:
+      - './etc/apache2/apache2.conf:/etc/apache2/apache2.conf'
+      - './etc/apache2/sites-enabled/000-default.conf:/etc/apache2/sites-enabled/000-default.conf'
+      - './etc/apache2/sites-enabled/web.local.conf:/etc/apache2/sites-enabled/web.local.conf'
+      - './:/var/www/html'
+    ports:
+      - '8080:80'
+    restart: always
+    networks:
+      - backend
+networks:
+  backend:
+    name: my-network-backend

@@ -35,7 +35,7 @@
                         if (strpos($line, '# group:') !== false) {
                             $slug = url_title($line);
                             $href = base_url('icon-facebook?active='.$slug.'#' . $slug);
-                            $active = $_REQUEST['active'] == $slug ? 'active' : '';
+                            $active = !empty($_REQUEST['active']) && $_REQUEST['active'] == $slug ? 'active' : '';
                             echo '<a href="' . $href . '" class="collection-item ' . $active . '">↪ ';
                             echo str_replace('# group:', '', $line);
                             echo '</a>';
