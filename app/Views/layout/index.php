@@ -21,7 +21,8 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link href="<?php echo base_url("css/materialize.min.css") ?>" rel="stylesheet" media="screen,projection"/>
+    <link href="<?php
+    echo base_url("css/materialize.min.css") ?>" rel="stylesheet" media="screen,projection"/>
     <style type="text/css">
         nav ul a,
         nav .brand-logo {
@@ -46,13 +47,22 @@
         }
 
 
+        @media only screen and (max-width: 992px) {
+            nav .brand-logo {
+                font-size: 20px;
+            }
+        }
     </style>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65287833-14"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-65287833-14');
@@ -65,7 +75,7 @@
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="<?php
-            echo base_url('icon-facebook') ?>" class="brand-logo">👋 Welcome Tool</a>
+            echo base_url('icon-facebook') ?>" class="brand-logo">⚙️ Tool TWEB</a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="<?php
                     if (current_url() == base_url('icon-facebook')) {

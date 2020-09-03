@@ -22,6 +22,10 @@
         .collection-fixed {
             position: fixed;
         }
+
+        .collection-fixed .collection .collection-item {
+            padding: 5px 10px;
+        }
     </style>
     <div class="row list-icon-emoji">
         <div class="col s3 hide-on-small-only">
@@ -34,7 +38,7 @@
                         $active = '';
                         if (strpos($line, '# group:') !== false) {
                             $slug = url_title($line);
-                            $href = base_url('icon-facebook?active='.$slug.'#' . $slug);
+                            $href = base_url('icon-facebook?active=' . $slug . '#' . $slug);
                             $active = !empty($_REQUEST['active']) && $_REQUEST['active'] == $slug ? 'active' : '';
                             echo '<a href="' . $href . '" class="collection-item ' . $active . '">↪ ';
                             echo str_replace('# group:', '', $line);
@@ -43,9 +47,35 @@
                     }
                     ?>
                 </div>
+
+                <div class="banner-gg-ads">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Vertical -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-2133388326821128"
+                         data-ad-slot="1485986610"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
             </div>
         </div>
         <div class="col s12 xl9">
+            <div class="banner-gg-ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Top 728 x 90 -->
+                <ins class="adsbygoogle"
+                     style="display:inline-block;width:728px;height:90px"
+                     data-ad-client="ca-pub-2133388326821128"
+                     data-ad-slot="8687434187"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
             <blockquote>
                 Click vào icon để copy.
             </blockquote>
